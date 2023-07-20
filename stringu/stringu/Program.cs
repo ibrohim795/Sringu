@@ -16,16 +16,16 @@ namespace stringu
             string a = Console.ReadLine();
             for (int i = 0; i < a.Length; i++)
             {
-                for (int j = i; j < a.Length - 1; j++)
+                for (int j = i; j < a.Length ; j++)
                 {
-                    if (a[i] == a[j])
+                    if ( a[i] == a[j])
                     {
                         x++;
                     }
                     else break;
 
                 }
-                if (x > xmax)
+                if (x >= xmax)
                 {
                     xmax = x;
                     hr = a[i];
