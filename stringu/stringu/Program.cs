@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string s=Console.ReadLine();
+            //Console.WriteLine(s);
+            Console.WriteLine(engks(s));
+        }
+
+        static string engks(string s)
+        {
+            string[] str = s.Split(' ');
+            return str.Max() ;
         }
     }
 }
