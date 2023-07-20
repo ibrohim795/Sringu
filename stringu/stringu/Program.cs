@@ -18,14 +18,14 @@ namespace stringu
             {
                 for (int j = i; j < a.Length ; j++)
                 {
-                    if ( a[i] == a[j])
+                    if (char.IsLetter(a[i]) && a[i] == a[j])
                     {
                         x++;
                     }
                     else break;
 
                 }
-                if (x >= xmax)
+                if ( x >= xmax)
                 {
                     xmax = x;
                     hr = a[i];
