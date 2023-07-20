@@ -6,12 +6,17 @@ namespace stringu
     {
         static void Main(string[] args)
         {
+            masala1();
+        }
+
+        private static void masala1()
+        {
             char hr = 'g';
-            int x = 0, xmax=0;
-            string a=Console.ReadLine();
-            for(int i=0; i<a.Length; i++)
+            int x = 0, xmax = 0;
+            string a = Console.ReadLine();
+            for (int i = 0; i < a.Length; i++)
             {
-                for (int j =i ; j< a.Length-1; j++)
+                for (int j = i; j < a.Length - 1; j++)
                 {
                     if (a[i] == a[j])
                     {
@@ -23,8 +28,9 @@ namespace stringu
                 if (x > xmax)
                 {
                     xmax = x;
-                     hr = a[i];
-                }x=0;
+                    hr = a[i];
+                }
+                x = 0;
 
             }
             Console.WriteLine($"{hr} harfdan {xmax} ta bor");
